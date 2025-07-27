@@ -1,0 +1,110 @@
+{
+  "commands": {
+    "mtls": {
+      "subcommands": {
+        "cert-auth": {
+          "function": "generate_ca",
+          "description": "Generate the EyeStone CA for the mTLS implementation. This will be used to sign every certificate."
+        },
+        "server": {
+          "function": "generate_server",
+          "description": "Generate the EyeStone server certificate for the mTLS implementation."
+        }
+      }
+    },
+    "list": {
+      "subcommands": {
+        "agents": {
+          "function": "list_agents",
+          "description": "List connected agents."
+        },
+        "pools": {
+          "function": "list_pools",
+          "description": "List existing pools."
+        }
+      }
+    },
+    "agent": {
+      "subcommands": {
+        "interact": {
+          "function": "agent_interact",
+          "args": ["agent_id"],
+          "description": "Interact with an agent through a shell (cmd.exe / bash)."
+        },
+        "remove": {
+          "function": "agent_remove",
+          "args": ["agent_id"],
+          "description": "Disconnect from an agent and remove it from the agent list."
+        },
+        "detach": {
+          "function": "agent_detach",
+          "args": ["agent_id"],
+          "description": "Disconnect from an agent, remove it from the agent list and uninstall it from the target device."
+        },
+        "sendfile": {
+          "function": "agent_sendfile",
+          "args": ["agent_id", "src_path", "dst_path"],
+          "description": "Send a file from the server to a specific agent from the agent list."
+        }
+      }
+    },
+    "implant": {
+      "subcommands": {
+        "create": {
+          "function": "implant_create",
+          "args": ["local_host", "local_port", "platform"],
+          "description": "Request the compilation of an implant to one of the available compilation servers, depending on the platform."
+        }
+      }
+    },
+    "listener": {
+      "subcommands": {
+        "create": {
+          "function": "listener_create",
+          "args": ["local_port"],
+          "description": "Open a specific port on the server and start listening for a TCP connection from an agent."
+        }
+      }
+    },
+    "pool": {
+      "subcommands": {
+        "inspect": {
+          "function": "pool_inspect",
+          "args": ["pool_name"],
+          "description": "List the agents within a pool."
+        },
+        "create": {
+          "function": "pool_create",
+          "args": ["pool_name"],
+          "description": "Create an agent pool."
+        },
+        "add-agent": {
+          "function": "pool_add_agent",
+          "args": ["pool_name", "agent_id"],
+          "description": "Add a registered agent to a pool."
+        },
+        "remove-agent": {
+          "function": "pool_remove_agent",
+          "args": ["pool_name", "agent_id"],
+          "description": "Remove an agent from a pool."
+        },
+        "delete": {
+          "function": "pool_delete",
+          "args": ["pool_name"],
+          "description": "Delete a pool. If the pool is not empty, it will be removed but the agents inside the pool will remain intact."
+        },
+        "execute": {
+          "function": "pool_execute",
+          "args": ["pool_name", "command_file"],
+          "description": "Execute a list of commands on every agent within a pool. The command file must be stored in the server."
+        },
+        "sendfile": {
+          "function": "pool_sendfile",
+          "args": ["pool_name", "src_path", "dst_path"],
+          "description": "Transfer a file from the server to every agent within the selected pool."
+        }
+      }
+    }
+  }
+}
+
