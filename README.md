@@ -114,7 +114,7 @@ Show full help:
 ```
 
 # License
-This software is licensed under the **Aferro General Public License v3.0 (AGPLv3.0)**. Please refer to the `LICENSE` file for more details.
+This software is licensed under the **Affero General Public License v3.0 (AGPLv3.0)**. Please refer to the `LICENSE` file for more details.
 
 By using this tool, **you agree to these terms in full.**
 
