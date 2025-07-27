@@ -120,3 +120,7 @@ By using this tool, **you agree to these terms in full.**
 
 # Legal Disclaimer
 EyeStoneC2 is an offensive security framework. Some of its components could be flagged as malware by security solutions. **The use of this software in environments where explicit authorization has not been provided is extrictly prohibited.** It is solely the user's responsibility to ensure lawful and ethical use of EyeStoneC2.
+
+## TODO
+- Command definition documentation
+- CommandParser data type verification
