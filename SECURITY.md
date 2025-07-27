@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-We currently support the latest release. Please ensure you are using the most up-to-date version before reporting a vulnerability.
+We currently support the latest release / release candidate. Please ensure you are using the most up-to-date version before reporting a vulnerability.
 
 | Version | Supported          |
 | ------- | ------------------ |
