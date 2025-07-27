@@ -1,7 +1,9 @@
 
 # EyeStoneC2
 
-![image_alt](https://github.com/gperez01/EyeStoneC2/blob/405eef4a24a65a14f867e60d4caa1514556e30f0/images/logo.png)
+<p align="center">
+  <img src="https://github.com/gperez01/EyeStoneC2/blob/405eef4a24a65a14f867e60d4caa1514556e30f0/images/logo.png" alt="eyestonec2" width="500" height="500"/>
+</p>
 
 EyeStoneC2 is an open-source, modular and customizable Red Teaming framework designed to provide companies a usable, operable and maintainable offensive security solution.
 
